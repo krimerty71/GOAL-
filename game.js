@@ -48,16 +48,14 @@ function shoot(playerShot) {
     // Проверяем результат
     setTimeout(() => {
         let result = '';
-        let isGoal = false;
         
         if (playerShot === game.keeperPosition) {
-            result = `🧤 Вратарь поймал мяч! (Удар в ${shotText})`;
+            result = `🧤 Сейв! (${shotText})`;
             resultDiv.className = 'result save';
         } else {
-            result = `⚽ ГОООЛ! (Удар в ${shotText})`;
+            result = `⚽ ГОЛ! (${shotText})`;
             resultDiv.className = 'result goal';
             game.goals++;
-            isGoal = true;
         }
         
         resultDiv.textContent = result;
