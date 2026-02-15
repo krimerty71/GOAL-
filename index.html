@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пенальти</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game">
+        <h1>⚽ Пенальти ⚽</h1>
+        
+        <div class="field" id="field">
+            <div class="goal">
+                <div class="goalkeeper" id="goalkeeper">🧤</div>
+            </div>
+            <div class="ball" id="ball">⚽</div>
+        </div>
+
+        <div class="controls">
+            <button onclick="shoot('left')">В левый угол</button>
+            <button onclick="shoot('center')">По центру</button>
+            <button onclick="shoot('right')">В правый угол</button>
+        </div>
+
+        <div class="result" id="result"></div>
+        <div class="stats" id="stats"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
