@@ -69,14 +69,9 @@ h1 {
 @keyframes kick {
     0% {
         bottom: 10px;
-        transform: translateX(-50%) scale(1);
-    }
-    50% {
-        transform: translateX(-50%) scale(1.2);
     }
     100% {
-        bottom: 150px;
-        transform: translateX(-50%) scale(1);
+        bottom: 180px;
     }
 }
 
@@ -104,16 +99,31 @@ button:hover {
     background: #1976D2;
 }
 
-.result {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 20px 0;
-    padding: 10px;
-    border-radius: 5px;
-    background: #f5f5f5;
-}
-
 .stats {
     font-size: 18px;
     color: #333;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+}
+
+.result {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    padding: 15px;
+    border-radius: 5px;
+    background: #f5f5f5;
+    min-height: 30px;
+}
+
+.result.goal {
+    background: #4CAF50;
+    color: white;
+}
+
+.result.save {
+    background: #f44336;
+    color: white;
 }
